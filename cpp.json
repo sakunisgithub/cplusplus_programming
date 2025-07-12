@@ -1,0 +1,87 @@
+{
+    "C++ Boilerplate": {
+        "prefix": "cppboilerplate",       // trigger keyword
+		"body": [
+			"#include<iostream>\n",
+            "using namespace std;\n",
+	 		"int main()",
+			"{",
+			"\t${0:/*code*/}",
+			"\treturn 0;",
+			"}"
+	 	],
+        "description": "Basic C++ boilerplate"
+    },
+
+	"C++ Class Boilerplate": {
+		"prefix": "cppclass",
+		"body": [
+			"class ${1:ClassName} {",
+			"public:",
+			"\t${0:}",
+			"};"
+    ],
+		"description": "Basic C++ class boilerplate"
+	},
+
+	"Snippet 1": {
+		"prefix": "fun1",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"Snippet 2": {
+		"prefix": "fun2",
+		"body": [
+			"${1:return_type} ${2:function_name}(${3:argument_data_type}, ${4:argument_data_type})",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"cout": {
+        "prefix": "cout",
+        "body": [ "cout << ${1:/* text */} <<${2};"]
+    },
+
+	"Snippet 3": {
+		"prefix": "fun0",
+		"body": [
+			"${1:return_type} ${2:function_name}()",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+	]
+	},
+
+	"if" : {
+        "prefix" : "if",
+        "body": [
+            "if (${1:/* condition */})",
+            "{",
+            "\t${0:/* code */}",
+            "}"
+        ]
+    },
+
+	"else" : {
+		"prefix": "else",
+		"body": [
+			"else",
+			"{",
+			"\t${0:/*code*/}",
+			"}"
+		]
+	},
+
+	"#include" : {
+        "prefix" : "#inc",
+        "body": [ "#include <${1}"]
+    },
+
+}
